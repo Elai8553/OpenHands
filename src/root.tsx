@@ -13,6 +13,7 @@ import {
 import "./tailwind.css";
 import "./index.css";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import {
@@ -112,6 +113,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </AgentServerUIRoot>
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
